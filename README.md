@@ -24,7 +24,7 @@ ClassLoaders for each test run.
 ## Goals
 
 For each question in the quiz, you will need to find a specific letter. All letters, in the order of the questions,
-will form a short sentence. Your goal is to find that sentence.
+will form a word. Your goal is to find that word.
 
 In order to make sure you have not simply guessed missing letters, you need to note, for each question, the _type of 
 leak_ caused.
