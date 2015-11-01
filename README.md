@@ -1,7 +1,6 @@
 # ClassLoader leak quiz
 
-Use the [ClassLoader Leak Test Framework](https://github.com/mjiderhamn/classloader-leak-prevention/tree/master/classloader-leak-test-framework)
-to solve the following quiz.
+Use the [ClassLoader Leak Test Framework](https://github.com/mjiderhamn/classloader-leak-prevention/tree/master/classloader-leak-test-framework) and the process detailed in the first parts of [this blog series](http://java.jiderhamn.se/2011/12/11/classloader-leaks-i-how-to-find-classloader-leaks-with-eclipse-memory-analyser-mat/) to solve the following quiz.
 
 *Note*, if you choose to run your tests with Maven, make sure to fork for each test case, or you'll aggregate leaked
 ClassLoaders for each test run.
