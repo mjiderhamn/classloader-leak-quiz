@@ -23,7 +23,7 @@ ClassLoaders for each test run.
 ## Goals
 
 For each question in the quiz, you will need to find a specific letter. All letters, in the order of the questions,
-will form a word. Your goal is to find that word.
+will form a word. Your goal is to find that word. Note that _classname_ always refers to the simple/unqualified name of a class, i.e. ignore the package name.
 
 In order to make sure you have not simply guessed missing letters, you need to note, for each question, the _type of 
 leak_ caused.
@@ -91,7 +91,7 @@ com.sun.media.jai.codec.SeekableStream.wrapInputStream(
 ```
 
 ## 4. GeoTools
-Find the second letter of the class causing the leak
+Find the second letter of the class causing the leak. (Ignore any references passing through JAI.)
 
 ```xml
 <dependency>
@@ -115,8 +115,7 @@ new javax.swing.JEditorPane("text/plain", "dummy");
 ```
  
 ## 6. JGroups
-Find the second letter of the *outer* JGroups class causing one of the two leaks. You'll have to guess which of the two.
-Note the type of leaks for both!
+Find the second letter of the *outer* JGroups class causing one of the two leaks. You'll have to guess which of the two to get the letter from. Note the type of leaks for both!
 
 ```xml
 <dependency>
