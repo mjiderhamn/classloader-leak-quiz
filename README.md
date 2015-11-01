@@ -75,7 +75,7 @@ attr.setValue("bar");
 ```
 
 ## 3. JAI
-Find the first letter of the class causing the leak
+Find the first letter of the class causing the leak. (As for the type, your dump may contain two references to this class, but only one of them has a single path to GC root, with a clear type of leak.)
 
 ```xml
 <dependency>
@@ -87,7 +87,7 @@ Find the first letter of the class causing the leak
  
 ```java
 com.sun.media.jai.codec.SeekableStream.wrapInputStream(
-    new ByteArrayInputStream(new byte[0]), true);
+  new java.io.ByteArrayInputStream(new byte[0]), true);
 ```
 
 ## 4. GeoTools
