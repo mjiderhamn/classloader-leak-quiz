@@ -74,8 +74,8 @@ attr.setIsId(true);
 attr.setValue("bar");
 ```
 
-## 3. JAI
-Find the first letter of the class causing the leak. (As for the type, your dump may contain two references to this class, but only one of them has a single path to GC root, with a clear type of leak.)
+## 3. Java Advanced Imaging (JAI)
+Find the first letter of the class causing the leak. (As for the type, your dump may contain two references to this class, but only one of them has a single path to GC root.)
 
 ```xml
 <dependency>
