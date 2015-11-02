@@ -78,6 +78,15 @@ attr.setValue("bar");
 Find the first letter of the class causing the leak. (As for the type, your dump may contain two references to this class, but only one of them has a single path to GC root.)
 
 ```xml
+<repositories>
+  <!-- Repo for JAI -->
+  <repository>
+    <id>jboss-thirdparty-releases</id>
+    <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
+  </repository>
+</repositories>
+```
+```xml
 <dependency>
   <groupId>com.sun.media</groupId>
   <artifactId>jai-codec</artifactId>
@@ -93,6 +102,16 @@ com.sun.media.jai.codec.SeekableStream.wrapInputStream(
 ## 4. GeoTools
 Find the second letter of the class causing the leak. (Ignore any references passing through JAI.)
 
+```xml
+<repositories>
+  <!-- Repo for GeoTools -->
+  <repository>
+    <id>osgeo</id>
+    <name>Open Source Geospatial Foundation Repository</name>
+    <url>http://download.osgeo.org/webdav/geotools/</url>
+  </repository>
+</repositories>
+```
 ```xml
 <dependency>
   <groupId>org.geotools</groupId>
