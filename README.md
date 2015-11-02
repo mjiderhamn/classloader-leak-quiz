@@ -20,6 +20,8 @@ ClassLoaders for each test run.
   </build>
 ```
 
+Feel free to clone this repo to get a head start!
+
 ## Goals
 
 For each question in the quiz, you will need to find a specific letter. All letters, in the order of the questions,
